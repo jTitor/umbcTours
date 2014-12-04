@@ -2,15 +2,69 @@ package com.example.umbctours;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 
-public class MenuActivity extends Activity {
+public class MenuActivity extends Activity implements OnClickListener {
 
+	private Resources res;
+	public void onClick(View view)
+	{
+		//Get the tag of this button
+		//and lookup for its building info.
+		Object viewTag = view.getTag();
+		
+		//If there was no info, complain in logs.
+		//For now, don't tell the user anything.
+		if(viewTag == null)
+		{
+			Log.w("UI", "Menu button " + view + " is missing tag, aborting click");
+			return;
+		}
+		
+		ButtonInfo btnInf = (ButtonInfo)viewTag;
+		
+		//Otherwise, send building info to building details activity.
+		Intent goToDetails = new Intent(this, BuildingInfoActivity.class);
+		goToDetails.putExtra(getPackageName() + R.string.extra_bldgId, btnInf.GetBuildingId());
+		startActivity(goToDetails);
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
+		res = getResources();
+		//Go get the list of building tags.
+		TypedArray buildings = res.obtainTypedArray(R.array.buildings);
+		//Add buttons for each building.
+		for(int i = 0; i < buildings.length(); ++i)
+		{
+			//Get the building entry first.
+			int buildingRes = buildings.getResourceId(i, -1);
+			if(buildingRes != -1)
+			{
+				TypedArray building = res.obtainTypedArray(buildingRes);
+				String label = building.getString(0);
+				Button b = new Button(getApplicationContext());
+				b.setTag(new ButtonInfo(buildingRes, label));
+				//Building name is assumed to be first
+				//in building array.
+				b.setText(label);
+				b.setOnClickListener(this);
+				building.recycle();
+			}
+		}
+		
+		//Clean up the resource arrays.
+		buildings.recycle();
 	}
 
 	@Override

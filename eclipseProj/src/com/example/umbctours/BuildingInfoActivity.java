@@ -1,9 +1,15 @@
 package com.example.umbctours;
 
+import org.w3c.dom.Text;
+
 import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class BuildingInfoActivity extends Activity {
 
@@ -11,6 +17,29 @@ public class BuildingInfoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_building_info);
+		//Recover building ID from the intent that
+		//spawned us.
+		Intent intent = getIntent();
+		Resources res = getResources();
+		int bldgId = intent.getIntExtra(getPackageName() + R.string.extra_bldgId, -1);
+		//If there was no id, abort!
+		if(bldgId == -1)
+		{
+			return;
+		}
+		
+		//Otherwise, set up window details.
+		TypedArray building = res.obtainTypedArray(bldgId);
+		String bName = building.getString(0);
+		String bDesc = building.getString(1);
+		
+		TextView bNameLabel = (TextView)findViewById(R.id.BuildingName);
+		TextView bDescLabel = (TextView)findViewById(R.id.BuildingText);
+		
+		bNameLabel.setText(bName);
+		bDescLabel.setText(bDesc);
+		
+		building.recycle();
 	}
 
 	@Override

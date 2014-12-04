@@ -9,7 +9,7 @@
     tools:context="com.example.umbctours.SplashActivity" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/BuildingImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
