@@ -3,6 +3,7 @@ package com.example.umbctours;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -16,26 +17,18 @@ public class SplashActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
 		//Initialize everything here.
-	}
-
-	//Called whenever we're visible to the user.
-	@Override
-	protected void onResume()
-	{
-		try
-		{
-			wait((long)(MIN_SPLASH_LIFETIME_SECS * 1000));
-		}
-		catch (InterruptedException e)
-		{
-			//This is the splash screen,
-			//we really don't care that much if we're interrupted.
-			//Skip to the main menu, then.
-		}
-		
-		//Load up the main menu.
-		Intent goToMenu = new Intent(this, MenuActivity.class);
-		startActivity(goToMenu);
+		//Request that we load the main menu after (MIN_SPLASH_LIFETIME_SECS).
+		new Handler().postDelayed(new Runnable() {
+			
+			@Override
+			public void run() {
+				//Load up the main menu.
+				Intent goToMenu = new Intent(SplashActivity.this, MenuActivity.class);
+				startActivity(goToMenu);
+				//Close *this* activity, since it's just a splash screen.
+				SplashActivity.this.finish();
+			}
+		}, (long)(MIN_SPLASH_LIFETIME_SECS * 1000));
 	}
 	
 	@Override

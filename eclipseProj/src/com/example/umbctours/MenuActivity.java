@@ -2,12 +2,14 @@ package com.example.umbctours;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -44,6 +46,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 		res = getResources();
 		//Go get the list of building tags.
 		TypedArray buildings = res.obtainTypedArray(R.array.buildings);
+		LinearLayout btnList = (LinearLayout)findViewById(R.id.BuildingContent);
 		//Add buttons for each building.
 		for(int i = 0; i < buildings.length(); ++i)
 		{
@@ -59,6 +62,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 				//in building array.
 				b.setText(label);
 				b.setOnClickListener(this);
+				btnList.addView(b);
 				building.recycle();
 			}
 		}
