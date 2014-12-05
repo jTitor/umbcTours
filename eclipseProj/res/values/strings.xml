@@ -42,7 +42,7 @@
     Building definitions. Each array represents one building,
     and should have:
     		* Name
-    		* Description 
+    		* Description 
     -->
     <array name="uc_bldg">
         <item><string name="uc_name">University Center</string></item>
@@ -57,9 +57,10 @@
         <item>@drawable/aok_library_image</item>
     </array>
     <array name="rac_bldg">
-        <item><string name="rac_name">Retriever Athletic Center</string></item>
-        <item><string name="rac_desc">The Retriever Athletic Center, or "The RAC", is UMBC\'s very own gym.
-            Features include an indoor pool, an outdoor pool, a full sized basketball court, and the newly renovated weight room.</string></item>
+        <item><string name="rac_name">Retriever Activities Center</string></item>
+        <item><string name="rac_desc">The Retriever Activities Center, or "The RAC", is UMBC\'s very own gym.
+            Features include an indoor pool, an outdoor pool, a full sized basketball court, and the newly renovated weight room. \n\n
+            For more information on the RAC, visit umbcretrievers.com/information/facilities/racarena/index</string></item>
         <item>@drawable/rac_image</item>
     </array>
     <array name="dhall_bldg">

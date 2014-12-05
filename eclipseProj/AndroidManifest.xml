@@ -30,11 +30,15 @@
         </activity>
         <activity
             android:name=".MenuActivity"
-            android:label="@string/title_activity_menu" >
+            android:label="@string/title_activity_menu"
+            android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="nosensor"  >
         </activity>
         <activity
             android:name=".BuildingInfoActivity"
-            android:label="@string/title_activity_building_info" >
+            android:label="@string/title_activity_building_info"
+            android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="nosensor"  >
         </activity>
 
         <meta-data
@@ -46,11 +50,15 @@
 
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map" >
+            android:label="@string/title_activity_map"
+            android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="nosensor" >
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:label="@string/title_activity_home" >
+            android:label="@string/title_activity_home" 
+            android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="nosensor" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
 
@@ -59,11 +67,15 @@
         </activity>
         <activity
             android:name=".AboutActivity"
-            android:label="@string/title_activity_about" >
+            android:label="@string/title_activity_about" 
+            android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="nosensor" >
         </activity>
         <activity
             android:name=".FaqActivity"
-            android:label="@string/title_activity_faq" >
+            android:label="@string/title_activity_faq" 
+            android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="nosensor" >
         </activity>
     </application>
 
