@@ -20,9 +20,12 @@
     </string>
     
     <!-- About Info -->
-    <string name="about_info">        App developed by Michael Leung, Neil Joshi, and Patrick Jenkins.
-        Graphic Design by Hannah Korangkool.
-        Developed for CMSC 331 at UMBC.	</string>
+    <string name="about_info">
+        App developed by:\n
+        Michael Leung, Neil Joshi, and Patrick Jenkins.\n\n
+        Graphic Design by:\n
+        Hannah Korangkool.\n\n
+        Developed for CMSC 331 at UMBC.\n\n	</string>
 
     <!-- Building content -->
     <!-- Names -->
