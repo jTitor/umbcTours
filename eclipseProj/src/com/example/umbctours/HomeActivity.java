@@ -29,10 +29,10 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 			case R.id.button_faq:
 				activityClass = FaqActivity.class;
 				break;
+			*/
 			case R.id.button_about:
 				activityClass = AboutActivity.class;
 				break;
-			*/
 			default:
 				return;
 		}

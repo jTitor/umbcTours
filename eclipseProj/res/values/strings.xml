@@ -7,21 +7,29 @@
     <string name="title_activity_menu">UMBC Tour</string>
     <string name="title_activity_building_info">UMBC Buildings</string>
     <string name="extra_bldgId">BuildingId</string>
-    
+
     <!-- Strings for home menu -->
     <string name="map_button">Map</string>
     <string name="list_button">Buildings</string>
     <string name="faq_button">FAQ</string>
     <string name="about_button">About</string>
 
+    <!-- About Description -->
+    <string name="about_desc">
+        App developed by Michael Leung, Neil Joshi, and Patrick Jenkins.
+        Graphic Design by Hannah Korangkool.
+        Developed for CMSC 331 at UMBC.
+    </string>
+    
     <!-- Building content -->
     <!-- Names -->
+
 
     <!--
     Building definitions. Each array represents one building,
     and should have:
     		* Name
-    		* Description 
+    		* Description 
     -->
     <array name="uc_bldg">
         <item><string name="uc_name">University Center</string></item>
@@ -45,7 +53,7 @@
     </array>
     <!--
 	Building list. Each building array 
-	in the previous section should be added as an <item>.
+	in the previous section should be added as an <item>.
     -->
     <array name="buildings">
         <item>@array/uc_bldg</item>
@@ -56,7 +64,7 @@
     </array>
 
     <string name="title_activity_map">MapActivity</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">UMBC Tours</string>
+    <string name="title_activity_about">AboutActivity</string>
 
 </resources>
