@@ -48,6 +48,8 @@
         <item><string name="uc_name">University Center</string></item>
         <item><string name="uc_desc">University Center Description</string></item>
         <item>@drawable/uc_image</item>
+        <item><float name="uc_latitude">39.254266</float></item>
+        <item><float name="uc_longitude">-76.713119</float></item>
     </array>
     <array name="library_bldg">
         <item><string name="library_name">Albin O. Kuhn Library</string></item>
@@ -55,6 +57,8 @@
             The Retriever Learning Center (RLC) on the first floor is accessable to anyone with a red student ID 24 hours a day.\n\n
             To learn more about the AOK library, visit https://www.umbc.edu/aok/main/index.html</string></item>
         <item>@drawable/aok_library_image</item>
+        <item><float name="library_latitude">39.256612</float></item>
+        <item><float name="library_longitude">-76.711467</float></item>
     </array>
     <array name="rac_bldg">
         <item><string name="rac_name">Retriever Activities Center</string></item>
@@ -62,6 +66,9 @@
             Features include an indoor pool, an outdoor pool, a full sized basketball court, and the newly renovated weight room. \n\n
             For more information on the RAC, visit umbcretrievers.com/information/facilities/racarena/index</string></item>
         <item>@drawable/rac_image</item>
+        <item><float name="rac_latitude">39.252830</float></item>
+        <item><float name="rac_longitude">-76.712462</float></item>
+        
     </array>
     <array name="dhall_bldg">
         <item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
@@ -70,11 +77,15 @@
             For more information on True Grit\'s, and other UMBC dining facilities visit
             http://www.umbc.edu/reslife/living/dining_facilities.html</string></item>
         <item>@drawable/dhall_image</item>
+        <item><float name="dhall_latitude">39.255643</float></item>
+        <item><float name="dhall_longitude">-76.707811</float></item>
     </array>
     <array name="ite_bldg">
         <item><string name="ite_name">Information Technology Engineering</string></item>
         <item><string name="ite_desc">HELL ON EARTH</string></item>
         <item>@drawable/ite_image</item>
+        <item><float name="ite_latitude">39.253881</float></item>
+        <item><float name="ite_longitude">-76.713991</float></item>
     </array>
     <!--
 	Building list. Each building array 
