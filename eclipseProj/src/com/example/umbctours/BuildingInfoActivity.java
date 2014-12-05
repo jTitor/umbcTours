@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.BitmapFactory;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
@@ -34,12 +36,14 @@ public class BuildingInfoActivity extends Activity{
 		String bName = building.getString(0);
 		String bDesc = building.getString(1);
 
-		Drawable bImage      = building.getDrawable(2);
+		int bImage      = building.getResourceId(2, -1);
 		ImageView bImageView = (ImageView)findViewById(R.id.BuildingImage);
 		TextView bNameLabel  = (TextView)findViewById(R.id.BuildingName);
 		TextView bDescLabel  = (TextView)findViewById(R.id.BuildingText);
 
-		bImageView.setImageDrawable(bImage);
+	
+		bImageView.setImageResource(bImage);//Bitmap(DrawableUtils.LoadDrawable(res, bImage, bImageView.getWidth(), bImageView.getHeight()));//BitmapFactory.decodeResource(res, bImage, opts));
+		//bImageView.setImageDrawable(bImage);
 		bNameLabel.setText(bName);
 		bDescLabel.setText(bDesc);
 		
