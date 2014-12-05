@@ -15,11 +15,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class BuildingInfoActivity extends Activity{
-
+	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_building_info);
+	public void onWindowFocusChanged(boolean hasFocus)
+	{
+		super.onWindowFocusChanged(hasFocus);
+		
 		//Recover building ID from the intent that
 		//spawned us.
 		Intent intent = getIntent();
@@ -41,15 +42,29 @@ public class BuildingInfoActivity extends Activity{
 		TextView bNameLabel  = (TextView)findViewById(R.id.BuildingName);
 		TextView bDescLabel  = (TextView)findViewById(R.id.BuildingText);
 
-	
-		bImageView.setImageResource(bImage);//Bitmap(DrawableUtils.LoadDrawable(res, bImage, bImageView.getWidth(), bImageView.getHeight()));//BitmapFactory.decodeResource(res, bImage, opts));
+		int width = bImageView.getWidth();
+		bImageView.setImageBitmap(DrawableUtils.LoadDrawable(res, bImage, width, -1));//BitmapFactory.decodeResource(res, bImage, opts));
 		//bImageView.setImageDrawable(bImage);
 		bNameLabel.setText(bName);
 		bDescLabel.setText(bDesc);
 		
 		building.recycle();
 	}
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_building_info);
+		
+	}
 
+	@Override
+	protected void onResume()
+	{
+		super.onResume();
+		
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
