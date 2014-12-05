@@ -25,11 +25,9 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 			case R.id.button_list:
 				activityClass = MenuActivity.class;
 				break;
-			/*
 			case R.id.button_faq:
 				activityClass = FaqActivity.class;
 				break;
-			*/
 			case R.id.button_about:
 				activityClass = AboutActivity.class;
 				break;
