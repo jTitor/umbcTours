@@ -43,13 +43,16 @@
         <item>@drawable/uc_image</item>
     </array>
     <array name="library_bldg">
-        <item><string name="library_name">Library Description</string></item>
-        <item><string name="library_desc">Library Description</string></item>
+        <item><string name="library_name">Albin O. Kuhn Library</string></item>
+        <item><string name="library_desc">Affectionately known as Club AOK, the UMBC library features 7 floors of books and resources.
+            The Retriever Learning Center (RLC) on the first floor is accessable to anyone with a red student ID 24 hours a day.\n\n
+            To learn more about the AOK library, visit https://www.umbc.edu/aok/main/index.html</string></item>
         <item>@drawable/aok_library_image</item>
     </array>
     <array name="rac_bldg">
         <item><string name="rac_name">Retriever Athletic Center</string></item>
-        <item><string name="rac_desc">Retriever Athletic Center Description</string></item>
+        <item><string name="rac_desc">The Retriever Athletic Center, or "The RAC", is UMBC\'s very own gym.
+            Features include an indoor pool, an outdoor pool, a full sized basketball court, and the newly renovated weight room.</string></item>
         <item>@drawable/rac_image</item>
     </array>
     <array name="dhall_bldg">
