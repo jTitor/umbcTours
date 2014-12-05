@@ -57,7 +57,8 @@
     </array>
     <array name="dhall_bldg">
         <item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
-        <item><string name="dhall_desc">True Grit\'s Dining Hall Description</string></item>
+        <item><string name="dhall_desc">True Grit\s Dining Hall is a buffet style, all you can eat, dining facility.
+            With a salad bar, a vegan section, and the Kosher Korner, students will find their favorite foods at True Grit\'s!</string></item>
         <item>@drawable/dhall_image</item>
     </array>
     <array name="ite_bldg">
