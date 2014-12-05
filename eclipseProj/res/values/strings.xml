@@ -40,22 +40,27 @@
     <array name="uc_bldg">
         <item><string name="uc_name">University Center</string></item>
         <item><string name="uc_desc">University Center Description</string></item>
+        <item>@drawable/uc_image</item>
     </array>
     <array name="library_bldg">
         <item><string name="library_name">Library Description</string></item>
         <item><string name="library_desc">Library Description</string></item>
+        <item>@drawable/aok_library_image</item>
     </array>
     <array name="rac_bldg">
         <item><string name="rac_name">Retriever Athletic Center</string></item>
         <item><string name="rac_desc">Retriever Athletic Center Description</string></item>
+        <item>@drawable/rac_image</item>
     </array>
     <array name="dhall_bldg">
         <item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
         <item><string name="dhall_desc">True Grit\'s Dining Hall Description</string></item>
+        <item>@drawable/dhall_image</item>
     </array>
     <array name="ite_bldg">
         <item><string name="ite_name">Information Technology Engineering</string></item>
         <item><string name="ite_desc">HELL ON EARTH</string></item>
+        <item>@drawable/ite_image</item>
     </array>
     <!--
 	Building list. Each building array 

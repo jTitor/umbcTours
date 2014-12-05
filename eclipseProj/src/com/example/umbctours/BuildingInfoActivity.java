@@ -1,16 +1,15 @@
 package com.example.umbctours;
 
-import org.w3c.dom.Text;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class BuildingInfoActivity extends Activity{
@@ -34,10 +33,13 @@ public class BuildingInfoActivity extends Activity{
 		TypedArray building = res.obtainTypedArray(bldgId);
 		String bName = building.getString(0);
 		String bDesc = building.getString(1);
-		
-		TextView bNameLabel = (TextView)findViewById(R.id.BuildingName);
-		TextView bDescLabel = (TextView)findViewById(R.id.BuildingText);
-		
+
+		Drawable bImage      = building.getDrawable(2);
+		ImageView bImageView = (ImageView)findViewById(R.id.BuildingImage);
+		TextView bNameLabel  = (TextView)findViewById(R.id.BuildingName);
+		TextView bDescLabel  = (TextView)findViewById(R.id.BuildingText);
+
+		bImageView.setImageDrawable(bImage);
 		bNameLabel.setText(bName);
 		bDescLabel.setText(bDesc);
 		
