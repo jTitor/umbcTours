@@ -16,7 +16,14 @@
 
     <!-- FAQ section -->
     <string name="faq_info">
-        I HAVE SO MANY QUESTIONS!!!
+        Q: Can I bring my pet antelope to school with me?\n\n
+        A: YES! Pets are highly encouraged!\n
+        * * *\n
+        Q: Can I go swimming in the library pond?\n\n
+        A: It is tradition at UMBC for freshmen to take a dip in the pond on the first day of school.\n
+        * * *\n
+        Q: Why does College Park suck compared to UMBC?\n\n
+        A: Because UMBC is swagu!\n
     </string>
     
     <!-- About Info -->
@@ -58,7 +65,9 @@
     <array name="dhall_bldg">
         <item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
         <item><string name="dhall_desc">True Grit\s Dining Hall is a buffet style, all you can eat, dining facility.
-            With a salad bar, a vegan section, and the Kosher Korner, students will find their favorite foods at True Grit\'s!</string></item>
+            With a salad bar, a vegan section, and the Kosher Korner, students will find their favorite foods at True Grit\'s!\n\n
+            For more information on True Grit\'s, and other UMBC dining facilities visit
+            http://www.umbc.edu/reslife/living/dining_facilities.html</string></item>
         <item>@drawable/dhall_image</item>
     </array>
     <array name="ite_bldg">
@@ -82,6 +91,5 @@
     <string name="title_activity_home">UMBC Tours</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_faq">FaqActivity</string>
-    <string name="hello_world">Hello world!</string>
 
 </resources>
