@@ -9,9 +9,11 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class BuildingInfoActivity extends Activity {
+public class BuildingInfoActivity extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,5 +61,11 @@ public class BuildingInfoActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void goToMap(View v) {
+		Intent goToMap = new Intent(this, MapActivity.class);
+		// TODO add info for specific building to intent
+		startActivity(goToMap);
 	}
 }

@@ -4,20 +4,17 @@
     <string name="app_name">umbcTours</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
     <string name="title_activity_splash">UMBC Tour</string>
     <string name="title_activity_menu">UMBC Tour</string>
     <string name="title_activity_building_info">UMBC Buildings</string>
-
     <string name="extra_bldgId">BuildingId</string>
-    
+
     <!-- Building content -->
-    <!-- 	Names -->
-    
-    
-    
-    <!-- 	Descriptions -->
-    <!-- 
+    <!-- Names -->
+
+
+    <!-- Descriptions -->
+    <!--
     <string name="uc_name">University Center</string>
     <string name="uc_desc">University Center Description</string>
     <string name="library_name">Library Description</string>
@@ -27,44 +24,46 @@
     <string name="dhall_name">True Grit\'s Dining Hall</string>
     <string name="dhall_desc">True Grit\'s Dining Hall Description</string>
     <string name="ite_name">Information Technology Engineering</string>
-    <string name="ite_desc">HELL ON EARTH</string>
-     -->
+    <string name="ite_desc">HELL ON EARTH</string>
+    -->
     <!--
     Building definitions. Each array represents one building,
     and should have:
     		* Name
-    		* Description 
+    		* Description 
     -->
     <array name="uc_bldg">
-		<item><string name="uc_name">University Center</string></item>
-		<item><string name="uc_desc">University Center Description</string></item>
-	</array>
-	<array name="library_bldg">
-		<item><string name="library_name">Library Description</string></item>
-		<item><string name="library_desc">Library Description</string></item>
-	</array>
-	<array name="rac_bldg">
-		<item><string name="rac_name">Retriever Athletic Center</string></item>
-		<item><string name="rac_desc">Retriever Athletic Center Description</string></item>
-	</array>
-	<array name="dhall_bldg">
-		<item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
-		<item><string name="dhall_desc">True Grit\'s Dining Hall Description</string></item>
-	</array>
-	<array name="ite_bldg">
-		<item><string name="ite_name">Information Technology Engineering</string></item>
-		<item><string name="ite_desc">HELL ON EARTH</string></item>
-	</array>
-	<!--
-	Building list. Each building array 
-	in the previous section should be added as an <item>.
-	-->
-    <array name="buildings">
-		<item>@array/uc_bldg</item>
-		<item>@array/library_bldg</item>
-		<item>@array/rac_bldg</item>
-		<item>@array/dhall_bldg</item>
-		<item>@array/ite_bldg</item>
+        <item><string name="uc_name">University Center</string></item>
+        <item><string name="uc_desc">University Center Description</string></item>
     </array>
-    
+    <array name="library_bldg">
+        <item><string name="library_name">Library Description</string></item>
+        <item><string name="library_desc">Library Description</string></item>
+    </array>
+    <array name="rac_bldg">
+        <item><string name="rac_name">Retriever Athletic Center</string></item>
+        <item><string name="rac_desc">Retriever Athletic Center Description</string></item>
+    </array>
+    <array name="dhall_bldg">
+        <item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
+        <item><string name="dhall_desc">True Grit\'s Dining Hall Description</string></item>
+    </array>
+    <array name="ite_bldg">
+        <item><string name="ite_name">Information Technology Engineering</string></item>
+        <item><string name="ite_desc">HELL ON EARTH</string></item>
+    </array>
+    <!--
+	Building list. Each building array 
+	in the previous section should be added as an <item>.
+    -->
+    <array name="buildings">
+        <item>@array/uc_bldg</item>
+        <item>@array/library_bldg</item>
+        <item>@array/rac_bldg</item>
+        <item>@array/dhall_bldg</item>
+        <item>@array/ite_bldg</item>
+    </array>
+
+    <string name="title_activity_map">MapActivity</string>
+
 </resources>
