@@ -36,6 +36,13 @@ public class MapActivity extends ActionBarActivity implements
 				+ R.string.extra_bldgId, -1);
 
 		setUpMapIfNeeded();
+		//Map can still be null if the phone doesn't have Play Services installed;
+		//handle this situation.
+		if(mMap == null)
+		{
+			Log.w("BuildingDetails", "Couldn't get map! Aborting.");
+			return;
+		}
 		TypedArray buildings = res.obtainTypedArray(R.array.buildings);
 		for (int i = 0; i < buildings.length(); i++) {
 			// Get the building entry first.

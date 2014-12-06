@@ -74,7 +74,7 @@
         <item><string name="dhall_name">True Grit\'s Dining Hall</string></item>
         <item><string name="dhall_desc">True Grit\s Dining Hall is a buffet style, all you can eat, dining facility.
             With a salad bar, a vegan section, and the Kosher Korner, students will find their favorite foods at True Grit\'s!\n\n
-            For more information on True Grit\'s, and other UMBC dining facilities visit
+            For more information on True Grit\'s, and other UMBC dining facilities, visit
             http://www.umbc.edu/reslife/living/dining_facilities.html</string></item>
         <item>@drawable/dhall_image</item>
         <item><float name="dhall_latitude">39.255643</float></item>
