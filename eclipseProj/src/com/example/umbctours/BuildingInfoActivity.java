@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class BuildingInfoActivity extends Activity{
 	
-	@Override
+	private int bldgId = 0;
 	public void onWindowFocusChanged(boolean hasFocus)
 	{
 		super.onWindowFocusChanged(hasFocus);
@@ -25,7 +25,7 @@ public class BuildingInfoActivity extends Activity{
 		//spawned us.
 		Intent intent = getIntent();
 		Resources res = getResources();
-		int bldgId = intent.getIntExtra(getPackageName() + R.string.extra_bldgId, -1);
+		bldgId = intent.getIntExtra(getPackageName() + R.string.extra_bldgId, -1);
 		//If there was no id, abort!
 		if(bldgId == -1)
 		{
@@ -86,7 +86,7 @@ public class BuildingInfoActivity extends Activity{
 	
 	public void goToMap(View v) {
 		Intent goToMap = new Intent(this, MapActivity.class);
-		// TODO add info for specific building to intent
+		goToMap.putExtra(getPackageName() + R.string.extra_bldgId, bldgId);
 		startActivity(goToMap);
 	}
 }

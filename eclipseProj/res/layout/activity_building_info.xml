@@ -48,7 +48,7 @@
             android:id="@+id/btnGoToMap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go to map"
+            android:text="View on map"
             android:onClick="goToMap" />
 
     </LinearLayout>
