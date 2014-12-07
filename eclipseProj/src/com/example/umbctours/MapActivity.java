@@ -66,6 +66,7 @@ public class MapActivity extends ActionBarActivity implements
 		}
 		buildings.recycle();
 
+		mMap.setMyLocationEnabled(true);
 		mMap.setOnInfoWindowClickListener(this);
 	}
 
