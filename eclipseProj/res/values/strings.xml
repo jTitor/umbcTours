@@ -48,7 +48,10 @@
     Building definitions. Each array represents one building,
     and should have:
     		* Name
-    		* Description 
+    		* Description
+    		* picture
+    		* latitude
+    		* longitude
     -->
     <array name="uc_bldg">
         <item><string name="uc_name">University Center</string></item>
