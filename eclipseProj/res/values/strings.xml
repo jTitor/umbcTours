@@ -56,7 +56,7 @@
         <item><string name="library_desc">Affectionately known as Club AOK, the UMBC library features 7 floors of books and resources.
             The Retriever Learning Center (RLC) on the first floor is accessable to anyone with a red student ID 24 hours a day.\n\n
             To learn more about the AOK library, visit https://www.umbc.edu/aok/main/index.html</string></item>
-        <item>@drawable/aok_library_image</item>
+        <item>@drawable/aok_front</item>
         <item><float name="library_latitude">39.256612</float></item>
         <item><float name="library_longitude">-76.711467</float></item>
     </array>
@@ -76,14 +76,14 @@
             With a salad bar, a vegan section, and the Kosher Korner, students will find their favorite foods at True Grit\'s!\n\n
             For more information on True Grit\'s, and other UMBC dining facilities, visit
             http://www.umbc.edu/reslife/living/dining_facilities.html</string></item>
-        <item>@drawable/dhall_image</item>
+        <item>@drawable/dhall_front</item>
         <item><float name="dhall_latitude">39.255643</float></item>
         <item><float name="dhall_longitude">-76.707811</float></item>
     </array>
     <array name="ite_bldg">
         <item><string name="ite_name">Information Technology Engineering</string></item>
         <item><string name="ite_desc">HELL ON EARTH</string></item>
-        <item>@drawable/ite_image</item>
+        <item>@drawable/ite_front</item>
         <item><float name="ite_latitude">39.253881</float></item>
         <item><float name="ite_longitude">-76.713991</float></item>
     </array>
