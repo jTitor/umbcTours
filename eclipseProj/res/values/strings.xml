@@ -58,14 +58,14 @@
         <item><string name="uc_desc">The University Center is located between upper and lower academic row. Many events
             at UMBC take place in the ballroom including concerts, orientation, and (seb) events. On the lower floor
             you\'ll find Starbucks and Chick-fil-a, two popular locations for students to hang out during the day.</string></item>
-        <item>@drawable/uc_image</item>
+        <item>@drawable/uc_front</item>
         <item><float name="uc_latitude">39.254266</float></item>
         <item><float name="uc_longitude">-76.713119</float></item>
     </array>
     <array name="library_bldg">
         <item><string name="library_name">Albin O. Kuhn Library</string></item>
         <item><string name="library_desc">Affectionately known as Club AOK, the UMBC library features 7 floors of books and resources.
-            The Retriever Learning Center (RLC) on the first floor is accessable to anyone with a red student ID 24 hours a day.\n\n
+            The Retriever Learning Center (RLC) on the first floor is accessible to anyone with a red student ID 24 hours a day.\n\n
             To learn more about the AOK library, visit https://www.umbc.edu/aok/main/index.html</string></item>
         <item>@drawable/aok_front</item>
         <item><float name="library_latitude">39.256612</float></item>
@@ -76,7 +76,7 @@
         <item><string name="rac_desc">The Retriever Activities Center, or "The RAC", is UMBC\'s very own gym.
             Features include an indoor pool, an outdoor pool, a full sized basketball court, and the newly renovated weight room. \n\n
             For more information on the RAC, visit umbcretrievers.com/information/facilities/racarena/index</string></item>
-        <item>@drawable/rac_image</item>
+        <item>@drawable/rac_front</item>
         <item><float name="rac_latitude">39.252830</float></item>
         <item><float name="rac_longitude">-76.712462</float></item>
         
@@ -104,6 +104,7 @@
 	Building list. Each building array 
 	in the previous section should be added as an <item>.
     -->
+    
     <array name="buildings">
         <item>@array/uc_bldg</item>
         <item>@array/library_bldg</item>
