@@ -26,7 +26,7 @@
         * * *\n
         Q: How can I get involved in clubs?
         A: Each semester UMBC hosts Involvement Fest so you can window shop and sign up for clubs you are interested in. You can also
-        visit the office of student life where they can help you find a club that's right for.\n
+        visit the office of student life where they can help you find a club that\'s right for.\n
         
     </string>
     
@@ -57,7 +57,7 @@
         <item><string name="uc_name">University Center</string></item>
         <item><string name="uc_desc">The University Center is located between upper and lower academic row. Many events
             at UMBC take place in the ballroom including concerts, orientation, and (seb) events. On the lower floor
-            you'll find Starbucks and Chick-fil-a, two popular locations for students to hang out during the day.</string></item>
+            you\'ll find Starbucks and Chick-fil-a, two popular locations for students to hang out during the day.</string></item>
         <item>@drawable/uc_image</item>
         <item><float name="uc_latitude">39.254266</float></item>
         <item><float name="uc_longitude">-76.713119</float></item>
@@ -93,7 +93,7 @@
     </array>
     <array name="ite_bldg">
         <item><string name="ite_name">Information Technology Engineering</string></item>
-        <item><string name="ite_desc">ITE is the home of the computer science department. Inside you'll find many lecture
+        <item><string name="ite_desc">ITE is the home of the computer science department. Inside you\'ll find many lecture
             halls and classrooms as well as teachers offices.</string></item>
         <item>@drawable/ite_front</item>
         <item><float name="ite_latitude">39.253881</float></item>
