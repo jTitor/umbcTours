@@ -53,7 +53,7 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 		Audio audio = new Audio();
 		Audio.SetInstance(audio);
 		//Load up any sounds here.
-		audio.LoadSound(getApplicationContext(), R.raw.ding, SoundCue.ButtonPress);
+		audio.LoadSound(getApplicationContext(), R.raw.click, SoundCue.ButtonPress);
 		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 	}
 
