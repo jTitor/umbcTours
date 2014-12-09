@@ -50,7 +50,7 @@ public class Audio {
 		return true;
 	}
 	
-	public void playSound(SoundCue cueType)
+	public void PlaySound(SoundCue cueType)
 	{
 		if(cueType == SoundCue._Count)
 		{

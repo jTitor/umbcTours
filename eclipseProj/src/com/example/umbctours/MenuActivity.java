@@ -1,7 +1,10 @@
 package com.example.umbctours;
 
+import com.example.umbctours.Audio.SoundCue;
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.renderscript.Type.CubemapFace;
 import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
@@ -36,6 +39,8 @@ public class MenuActivity extends Activity implements OnClickListener {
 		//Otherwise, send building info to building details activity.
 		Intent goToDetails = new Intent(this, BuildingInfoActivity.class);
 		goToDetails.putExtra(getPackageName() + R.string.extra_bldgId, btnInf.GetBuildingId());
+		//Play a noise, then go to the detail activity.
+		Audio.GetInstance().PlaySound(SoundCue.ButtonPress);
 		startActivity(goToDetails);
 	}
 	

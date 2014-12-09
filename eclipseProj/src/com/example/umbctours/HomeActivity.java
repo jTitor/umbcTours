@@ -1,5 +1,7 @@
 package com.example.umbctours;
 
+import com.example.umbctours.Audio.SoundCue;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -34,7 +36,8 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 			default:
 				return;
 		}
-		
+		//Play a sound, then go to the specified button.
+		Audio.GetInstance().PlaySound(SoundCue.ButtonPress);
 		Intent goToDetails = new Intent(this, activityClass);
 		startActivity(goToDetails);
 	}
@@ -49,6 +52,7 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 		Audio audio = new Audio();
 		Audio.SetInstance(audio);
 		//Load up any sounds here.
+		audio.LoadSound(getApplicationContext(), R.raw.ding, SoundCue.ButtonPress);
 	}
 
 	@Override
