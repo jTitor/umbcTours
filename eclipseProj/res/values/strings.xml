@@ -65,7 +65,7 @@
     <array name="library_bldg">
         <item><string name="library_name">Albin O. Kuhn Library</string></item>
         <item><string name="library_desc">Affectionately known as Club AOK, the UMBC library features 7 floors of books and resources.
-            The Retriever Learning Center (RLC) on the first floor is accessable to anyone with a red student ID 24 hours a day.\n\n
+            The Retriever Learning Center (RLC) on the first floor is accessible to anyone with a red student ID 24 hours a day.\n\n
             To learn more about the AOK library, visit https://www.umbc.edu/aok/main/index.html</string></item>
         <item>@drawable/aok_front</item>
         <item><float name="library_latitude">39.256612</float></item>
@@ -104,6 +104,7 @@
 	Building list. Each building array 
 	in the previous section should be added as an <item>.
     -->
+    
     <array name="buildings">
         <item>@array/uc_bldg</item>
         <item>@array/library_bldg</item>
