@@ -16,14 +16,18 @@
 
     <!-- FAQ section -->
     <string name="faq_info">
-        Q: Can I bring my pet antelope to school with me?\n\n
-        A: YES! Pets are highly encouraged!\n
+        Q: How many places are there to eat on campus?
+        A: 4. The commons has a food court. The dining hall which is buffet style. Chick-fil-a and Starbucks are in the UC. And Admin
+        has a small cafe.\n
         * * *\n
-        Q: Can I go swimming in the library pond?\n\n
-        A: It is tradition at UMBC for freshmen to take a dip in the pond on the first day of school.\n
+        Q: What is there to do around campus?
+        A: The student events board, known as (seb), hosts many events during the school year. Breakfast and bingo, open mic night,
+        and weekend movies are some of the most popular events on campus.\n
         * * *\n
-        Q: Why does College Park suck compared to UMBC?\n\n
-        A: Because UMBC is swagu!\n
+        Q: How can I get involved in clubs?
+        A: Each semester UMBC hosts Involvement Fest so you can window shop and sign up for clubs you are interested in. You can also
+        visit the office of student life where they can help you find a club that\'s right for.\n
+        
     </string>
     
     <!-- About Info -->
@@ -32,6 +36,8 @@
         Michael Leung, Neil Joshi, and Patrick Jenkins.\n\n
         Graphic Design by:\n
         Hannah Korangkool.\n\n
+        Pictures by:\n
+        Patrick Jenkins and Jason Palumbo.\n\n
         Developed for CMSC 331 at UMBC.\n\n	</string>
 
     <!-- Building content -->
@@ -42,11 +48,16 @@
     Building definitions. Each array represents one building,
     and should have:
     		* Name
-    		* Description 
+    		* Description
+    		* picture
+    		* latitude
+    		* longitude
     -->
     <array name="uc_bldg">
         <item><string name="uc_name">University Center</string></item>
-        <item><string name="uc_desc">University Center Description</string></item>
+        <item><string name="uc_desc">The University Center is located between upper and lower academic row. Many events
+            at UMBC take place in the ballroom including concerts, orientation, and (seb) events. On the lower floor
+            you\'ll find Starbucks and Chick-fil-a, two popular locations for students to hang out during the day.</string></item>
         <item>@drawable/uc_image</item>
         <item><float name="uc_latitude">39.254266</float></item>
         <item><float name="uc_longitude">-76.713119</float></item>
@@ -56,7 +67,7 @@
         <item><string name="library_desc">Affectionately known as Club AOK, the UMBC library features 7 floors of books and resources.
             The Retriever Learning Center (RLC) on the first floor is accessable to anyone with a red student ID 24 hours a day.\n\n
             To learn more about the AOK library, visit https://www.umbc.edu/aok/main/index.html</string></item>
-        <item>@drawable/aok_library_image</item>
+        <item>@drawable/aok_front</item>
         <item><float name="library_latitude">39.256612</float></item>
         <item><float name="library_longitude">-76.711467</float></item>
     </array>
@@ -76,14 +87,15 @@
             With a salad bar, a vegan section, and the Kosher Korner, students will find their favorite foods at True Grit\'s!\n\n
             For more information on True Grit\'s, and other UMBC dining facilities, visit
             http://www.umbc.edu/reslife/living/dining_facilities.html</string></item>
-        <item>@drawable/dhall_image</item>
+        <item>@drawable/dhall_front</item>
         <item><float name="dhall_latitude">39.255643</float></item>
         <item><float name="dhall_longitude">-76.707811</float></item>
     </array>
     <array name="ite_bldg">
         <item><string name="ite_name">Information Technology Engineering</string></item>
-        <item><string name="ite_desc">HELL ON EARTH</string></item>
-        <item>@drawable/ite_image</item>
+        <item><string name="ite_desc">ITE is the home of the computer science department. Inside you\'ll find many lecture
+            halls and classrooms as well as teachers offices.</string></item>
+        <item>@drawable/ite_front</item>
         <item><float name="ite_latitude">39.253881</float></item>
         <item><float name="ite_longitude">-76.713991</float></item>
     </array>
