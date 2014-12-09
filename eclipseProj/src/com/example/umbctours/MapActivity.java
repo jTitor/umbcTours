@@ -17,6 +17,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.media.AudioManager;
 import android.os.Bundle;
 
 public class MapActivity extends ActionBarActivity implements
@@ -73,7 +74,7 @@ public class MapActivity extends ActionBarActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
-
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 	}
 
 	@SuppressLint("NewApi")

@@ -2,6 +2,7 @@ package com.example.umbctours;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
@@ -16,6 +17,7 @@ public class SplashActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		//Initialize everything here.
 		//Request that we load the main menu after (MIN_SPLASH_LIFETIME_SECS).
 		new Handler().postDelayed(new Runnable() {

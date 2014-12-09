@@ -1,6 +1,7 @@
 package com.example.umbctours;
 
 import android.support.v7.app.ActionBarActivity;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,6 +14,7 @@ public class FaqActivity extends ActionBarActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_faq);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 	}
 
 	@Override
