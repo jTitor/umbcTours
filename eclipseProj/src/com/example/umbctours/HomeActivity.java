@@ -3,6 +3,7 @@ package com.example.umbctours;
 import com.example.umbctours.Audio.SoundCue;
 
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -53,6 +54,7 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 		Audio.SetInstance(audio);
 		//Load up any sounds here.
 		audio.LoadSound(getApplicationContext(), R.raw.ding, SoundCue.ButtonPress);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 	}
 
 	@Override

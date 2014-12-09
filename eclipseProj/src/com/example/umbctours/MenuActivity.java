@@ -3,6 +3,7 @@ package com.example.umbctours;
 import com.example.umbctours.Audio.SoundCue;
 
 import android.app.Activity;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.renderscript.Type.CubemapFace;
 import android.text.Layout;
@@ -48,6 +49,8 @@ public class MenuActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
+		
 		res = getResources();
 		//Go get the list of building tags.
 		TypedArray buildings = res.obtainTypedArray(R.array.buildings);
