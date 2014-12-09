@@ -44,6 +44,11 @@ public class HomeActivity extends ActionBarActivity implements OnClickListener
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		
+		//Set up the audio instance.
+		Audio audio = new Audio();
+		Audio.SetInstance(audio);
+		//Load up any sounds here.
 	}
 
 	@Override
